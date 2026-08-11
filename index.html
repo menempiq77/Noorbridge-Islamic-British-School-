@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NoorBridge Islamic British School — Discover Talent. Follow the British Curriculum. Shape the Future.</title>
+<meta name="description" content="NoorBridge Islamic British School is a live online school following the British National Curriculum to worldwide accredited Pearson Edexcel IGCSE and A Level certificates — with adaptive learning that discovers every child's talent and guides them to the right career path." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="42" height="42" viewBox="0 0 64 64" fill="none">
+          <defs>
+            <linearGradient id="logoGrad" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#2f9bdb"/>
+              <stop offset="1" stop-color="#0a3760"/>
+            </linearGradient>
+          </defs>
+          <!-- shield / crest -->
+          <path d="M32 4.5 L53 12.5 V29 C53 45 44 54.5 32 59.5 C20 54.5 11 45 11 29 V12.5 Z"
+                fill="url(#logoGrad)" stroke="#ffffff" stroke-width="1.4" stroke-opacity="0.35"/>
+          <!-- crescent + star: Islamic identity -->
+          <path d="M29.5 15.5a5.2 5.2 0 100 9.6 6.2 6.2 0 010-9.6z" fill="#f0a202"/>
+          <circle cx="37" cy="15.5" r="1.6" fill="#ffc94a"/>
+          <!-- open book: curriculum / self-discovery -->
+          <path d="M18.5 33.5c4-2.6 8.5-2.6 13.5-0.6 5-2 9.5-2 13.5 0.6v9c-4-2.6-8.5-2.6-13.5-0.6-5-2-9.5-2-13.5 0.6z"
+                fill="#ffffff"/>
+          <line x1="32" y1="33" x2="32" y2="42" stroke="#0a3760" stroke-width="1.1" stroke-opacity="0.5"/>
+          <!-- upward path: guidance to the future -->
+          <path d="M22 51.5 L28.5 46 L34 49.5 L42 42.5" stroke="#ffc94a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M37.5 42.5 L42 42.5 L42 47" stroke="#ffc94a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </span>
+      <span class="brand-name-group">
+        <span class="brand-name">NoorBridge</span>
+        <span class="brand-tagline">Islamic British School</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <div class="nav-group">
+        <button type="button" class="nav-group-trigger">About <span class="nav-caret">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="#why-us">Why NoorBridge</a>
+          <a href="#discovery">Talent Discovery</a>
+          <a href="#wellbeing">Pastoral &amp; Wellbeing</a>
+          <a href="#careers">Career Pathways</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-group-trigger">Programme <span class="nav-caret">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="#pathway">Curriculum &amp; Pathway</a>
+          <a href="#identity">Islamic Identity</a>
+          <a href="#ai-learning">Adaptive Learning</a>
+          <a href="#delivery">How We Deliver Lessons</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-group-trigger">Admissions <span class="nav-caret">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="#fees">Fees</a>
+          <a href="#tutoring">After-School Tutoring</a>
+          <a href="#admissions">Admissions Process</a>
+          <a href="#faq">FAQs</a>
+        </div>
+      </div>
+      <a href="#global" class="nav-single">Global Reach</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#admissions" class="btn btn-ghost">Book a Call</a>
+      <a href="#admissions" class="btn btn-primary">Apply Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== FLOATING TUITION BADGE (bottom-left) ===== -->
+<a href="#fees" class="tuition-fab">
+  <span class="tuition-fab-text">Want to know the fees?</span>
+  <span class="tuition-fab-btn">View Tuition &amp; Fees</span>
+</a>
+
+<!-- ===== FLOATING CONTACT CLUSTER (bottom-right: WhatsApp + Back to Top) ===== -->
+<div class="fab-stack">
+  <!-- Replace the number below with the school's real WhatsApp business number -->
+  <a href="https://wa.me/000000000000?text=Assalamu%20Alaikum%2C%20I%27d%20like%20to%20ask%20about%20admissions%20at%20NoorBridge"
+     class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat with admissions on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="#ffffff"><path d="M16 3C9 3 3 9 3 16c0 2.6.8 5 2.1 7.1L3 29l6.1-2c2 1.1 4.3 1.7 6.9 1.7 7 0 13-6 13-13S23 3 16 3zm0 2c5.9 0 10.7 4.8 10.7 10.7S21.9 26.4 16 26.4c-2.3 0-4.4-.7-6.2-1.9l-.4-.3-3.5 1.1 1.1-3.4-.3-.4A10.6 10.6 0 015.3 16C5.3 10.1 10.1 5.3 16 5.3zm-3.9 5.6c-.2 0-.6 0-.8.3-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.1 3.3 5.2 4.4 2.6.9 3.1.8 3.6.7.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.4-.3-.8-.5-.4-.2-2.1-1-2.4-1.2-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.7.1-.4-.2-1.5-.6-2.7-1.7-1-.9-1.6-2-1.8-2.4-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.1-.6-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4z"/></svg>
+  </a>
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 15l6-6 6 6"/>
+    </svg>
+  </button>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Founding Cohort · Enrolling Now</p>
+      <h1>We discover every child's <span class="highlight">talent</span> and guide them to the <span class="highlight">right future</span>.</h1>
+      <p class="lede">
+        NoorBridge is a live online Islamic British school. We follow the British National
+        Curriculum through to internationally accredited Pearson Edexcel IGCSE and A Level
+        certificates, while our adaptive learning model helps every student discover their own
+        strengths — and points them toward the career path that truly fits their skills.
+      </p>
+      <div class="hero-ctas">
+        <a href="#admissions" class="btn btn-primary btn-lg">Book a Free Consultation</a>
+        <a href="#pathway" class="btn btn-outline btn-lg">Explore the Curriculum</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><strong>Y1–13</strong><span>Full academic pathway</span></div>
+        <div class="trust-item"><strong>Edexcel IGCSE / A Level</strong><span>Worldwide accredited certificates</span></div>
+        <div class="trust-item"><strong>Adaptive</strong><span>Learning built around each learner</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-photo">
+        <img src="https://images.pexels.com/photos/5303580/pexels-photo-5303580.jpeg?auto=compress&cs=tinysrgb&w=900"
+             alt="Student attending a live online class on his laptop at home" loading="eager">
+      </div>
+      <div class="hero-card card-1">
+        <div class="card-icon">🧭</div>
+        <p class="card-title">Talent Discovery</p>
+        <p class="card-sub">Guided from Year 1</p>
+      </div>
+      <div class="hero-card card-2">
+        <div class="card-icon">🎓</div>
+        <p class="card-title">Edexcel IGCSE &amp; A Level</p>
+        <p class="card-sub">Worldwide accredited</p>
+      </div>
+      <div class="hero-card card-3">
+        <div class="card-icon">✦</div>
+        <p class="card-title">Adaptive Learning</p>
+        <p class="card-sub">Paced to every learner</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOGO / STRIP BAR ===== -->
+<section class="strip">
+  <div class="container strip-inner">
+    <span>British Curriculum Framework</span>
+    <span>Live Interactive Classrooms</span>
+    <span>Qualified, Vetted Educators</span>
+    <span>Faith-Centred Character Education</span>
+    <span>Global, Flexible Access</span>
+  </div>
+</section>
+
+<!-- ===== TUTORING PROMO ===== -->
+<section class="section tutoring-promo" id="tutoring-promo">
+  <div class="container">
+    <div class="tutoring-promo-card">
+      <div class="tutoring-promo-text">
+        <h2>Looking for 1-to-1 online tutoring?</h2>
+        <p>Extra support in any subject, after school, for students at any school.</p>
+      </div>
+      <a href="#tutoring" class="btn btn-gold btn-lg">Explore Tutoring</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT WE OFFER ===== -->
+<section class="section" id="offer">
+  <div class="container">
+    <div class="offer-heading">
+      <p class="section-tag">At a Glance</p>
+      <h2>What We Offer</h2>
+    </div>
+
+    <div class="offer-grid">
+      <div class="offer-card">
+        <div class="offer-icon offer-icon-blue">👥</div>
+        <h3>Experienced Educators</h3>
+        <p>Passionate, vetted teachers dedicated to your child's success.</p>
+      </div>
+      <div class="offer-card offer-card-featured">
+        <div class="offer-icon offer-icon-green">🏠</div>
+        <h3>Small Class Sizes</h3>
+        <p>Personalised attention in every lesson to support each child's unique learning journey.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon offer-icon-orange">🎥</div>
+        <h3>Live Interactive Lessons</h3>
+        <p>Real-time online classes where students ask questions, discuss and connect with classmates.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon offer-icon-gold">📘</div>
+        <h3>Structured Curriculum</h3>
+        <p>We follow the British National Curriculum, preparing students for Pearson Edexcel IGCSEs and beyond.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon offer-icon-navy">🛡️</div>
+        <h3>Full Parental Support</h3>
+        <p>Regular progress reports, parent-teacher meetings and an open line of communication throughout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GLOBAL REACH & ACCREDITATION ===== -->
+<section class="section section-alt" id="global">
+  <div class="container two-col">
+    <div class="two-col-text">
+      <p class="section-tag">Trusted Worldwide</p>
+      <h2>A British-Islamic education, wherever your family calls home</h2>
+      <p>
+        NoorBridge is built for families outside the UK as much as families within it. Our timetable
+        is designed around real time zones, our curriculum is aligned to a globally recognised
+        framework, and our certificates are accepted by universities worldwide.
+      </p>
+      <div class="region-chips">
+        <span>Middle East &amp; Gulf</span>
+        <span>Europe</span>
+        <span>North Africa</span>
+        <span>Southeast Asia</span>
+        <span>North America</span>
+        <span>Sub-Saharan Africa</span>
+      </div>
+    </div>
+    <div class="two-col-visual">
+      <div class="accred-grid">
+        <div class="accred-card">
+          <span class="accred-icon">🕒</span>
+          <p class="accred-title">3 Timetable Options</p>
+          <p class="accred-sub">Classes scheduled around UK, Gulf &amp; Southeast Asia time zones</p>
+        </div>
+        <div class="accred-card">
+          <span class="accred-icon">🎓</span>
+          <p class="accred-title">Pearson Edexcel</p>
+          <p class="accred-sub">Official exam board for IGCSE &amp; International A Level</p>
+        </div>
+        <div class="accred-card">
+          <span class="accred-icon">🇬🇧</span>
+          <p class="accred-title">British National Curriculum</p>
+          <p class="accred-sub">Consistent academic framework, Year 1 to Year 13</p>
+        </div>
+        <div class="accred-card">
+          <span class="accred-icon">🌍</span>
+          <p class="accred-title">Learners Worldwide</p>
+          <p class="accred-sub">Families joining live from across the globe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="section" id="why-us">
+  <div class="container">
+    <p class="section-tag">Why NoorBridge</p>
+    <h2>Four commitments, one learning journey</h2>
+    <p class="section-lede">
+      Most online schools deliver a curriculum. We build a complete upbringing — academic, spiritual
+      and practical — around every learner, from their first lesson to their final exam.
+    </p>
+
+    <div class="pillars">
+      <div class="pillar-card">
+        <div class="pillar-icon">🇬🇧</div>
+        <h3>British National Curriculum</h3>
+        <p>A coherent academic pathway from Year 1 leading to worldwide accredited Pearson Edexcel IGCSE and A Level certificates.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">☾</div>
+        <h3>Living Islamic Identity</h3>
+        <p>Qur'an, Arabic and Islamic Studies woven into daily life, not bolted on — building character alongside qualifications.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🧠</div>
+        <h3>Adaptive Learning</h3>
+        <p>Lessons and practice adjust to how each child learns best, so no one is rushed ahead or left behind.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🧭</div>
+        <h3>Talent-Led Career Pathways</h3>
+        <p>We help every child discover their own talents and interests, then guide them toward the career path that truly fits their skills.</p>
+      </div>
+    </div>
+
+    <div class="gallery-strip">
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/10028667/pexels-photo-10028667.jpeg?auto=compress&cs=tinysrgb&w=500"
+             alt="Students in hijab attending live online lessons on laptops" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/5303575/pexels-photo-5303575.jpeg?auto=compress&cs=tinysrgb&w=500"
+             alt="A boy attending a live online class at his home desk" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/6281994/pexels-photo-6281994.jpeg?auto=compress&cs=tinysrgb&w=500"
+             alt="Students in hijab collaborating on a laptop during a virtual lesson" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/8122079/pexels-photo-8122079.jpeg?auto=compress&cs=tinysrgb&w=500"
+             alt="A student in hijab focused on her online lesson on a laptop" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACADEMIC PATHWAY ===== -->
+<section class="section section-alt" id="pathway">
+  <div class="container">
+    <p class="section-tag">The Academic Pathway</p>
+    <h2>One clear route, Year 1 to Year 13 — built on self-discovery</h2>
+    <p class="section-lede">
+      We follow the British National Curriculum from the very first year, but our approach goes
+      further: every phase is designed to help a child understand how they learn and what they're
+      genuinely good at, before guiding them toward a worldwide accredited Pearson Edexcel IGCSE
+      and A Level certificate.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker">1</div>
+        <div class="timeline-content">
+          <span class="timeline-years">Years 1–6</span>
+          <h3>Primary Foundation</h3>
+          <p>Adaptive learning begins here, quietly mapping each child's strengths while building a broad academic and spiritual foundation.</p>
+          <div class="subject-chips">
+            <span>English</span><span>Maths</span><span>Science</span><span>Computing</span>
+            <span>History &amp; Geography</span><span>Art &amp; Design</span><span>Wellbeing &amp; PSHE</span>
+            <span class="chip-included">Qur'an — included</span><span class="chip-included">Arabic — included</span><span class="chip-included">Islamic Studies — included</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">2</div>
+        <div class="timeline-content">
+          <span class="timeline-years">Years 7–9</span>
+          <h3>Lower Secondary</h3>
+          <p>Subject specialism begins, study skills sharpen, and guided talent-discovery projects help students see where their interests and abilities naturally point.</p>
+          <div class="subject-chips">
+            <span>English</span><span>Maths</span><span>Combined Science</span><span>Computing</span>
+            <span>History &amp; Geography</span><span>Business Studies</span>
+            <span class="chip-included">Qur'an — included</span><span class="chip-included">Arabic — included</span><span class="chip-included">Islamic Studies — included</span>
+            <span class="chip-optional">+ Additional Language (optional)</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">3</div>
+        <div class="timeline-content">
+          <span class="timeline-years">Years 10–11</span>
+          <h3>Pearson Edexcel IGCSE</h3>
+          <p>A single, clearly chosen exam board route with focused options, structured revision and full exam readiness — leading to a certificate recognised by universities worldwide.</p>
+          <div class="subject-chips">
+            <span>English Language &amp; Literature</span><span>Mathematics</span><span>Combined Science</span>
+            <span>Business Studies</span><span>Economics</span><span>Accounting</span>
+            <span class="chip-included">Islamic Studies — included</span>
+            <span class="chip-optional">+ Single Sciences, Computer Science, Arabic (optional add-ons)</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">4</div>
+        <div class="timeline-content">
+          <span class="timeline-years">Years 12–13</span>
+          <h3>Pearson Edexcel A Level</h3>
+          <p>Deep specialisation in the subjects a student has proven themselves in, with university application and career-path mentoring built around their own talents.</p>
+          <div class="subject-chips">
+            <span>Mathematics</span><span>Biology</span><span>Chemistry</span><span>Physics</span>
+            <span>Business Studies</span><span>Economics</span><span>Accounting</span>
+            <span class="chip-included">Choose any 3 — included in tuition</span>
+            <span class="chip-optional">+ Additional subjects available for an extra fee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hifz-callout">
+      <div class="hifz-callout-icon">📖</div>
+      <div class="hifz-callout-text">
+        <h3>Also Available: Hifz (Qur'an Memorisation) Pathway</h3>
+        <p>Alongside the academic route, families can add a dedicated Hifz track — structured Qur'an
+        memorisation with regular revision (murajaʿah), taught by qualified huffaz alongside a
+        learner's normal academic timetable.</p>
+      </div>
+      <a href="#admissions" class="btn btn-outline">Ask About Hifz</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TALENT DISCOVERY FRAMEWORK ===== -->
+<section class="section" id="discovery">
+  <div class="container">
+    <p class="section-tag">Our Curriculum, Differently</p>
+    <h2>A curriculum built to help every child discover themselves</h2>
+    <p class="section-lede">
+      Grades tell you what a child has learned. We want to know what a child is naturally good at.
+      Alongside the British National Curriculum, every lesson, project and assessment at NoorBridge
+      feeds into one continuous goal: understanding each learner's real skills, strengths and
+      interests — then deliberately guiding them toward the path that fits.
+    </p>
+
+    <div class="discovery-grid">
+      <div class="discovery-card">
+        <div class="discovery-num">01</div>
+        <h3>Assess</h3>
+        <p>A baseline placement check and ongoing formative assessment map each learner's academic starting point from day one.</p>
+      </div>
+      <div class="discovery-card">
+        <div class="discovery-num">02</div>
+        <h3>Discover</h3>
+        <p>Our adaptive learning platform and varied projects — academic, creative, technical — surface where a child's real strengths and talents lie.</p>
+      </div>
+      <div class="discovery-card">
+        <div class="discovery-num">03</div>
+        <h3>Guide</h3>
+        <p>Teachers and mentors translate those strengths into clear, honest guidance on subject choices at IGCSE and A Level.</p>
+      </div>
+      <div class="discovery-card">
+        <div class="discovery-num">04</div>
+        <h3>Direct</h3>
+        <p>Every learner leaves with an accredited qualification and a career direction that genuinely fits their skills and talents — not a guess.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ISLAMIC IDENTITY ===== -->
+<section class="section section-alt" id="identity">
+  <div class="container two-col">
+    <div class="two-col-text">
+      <p class="section-tag">Faith at the Centre</p>
+      <h2>Islamic identity as a daily practice, not a subject on a timetable</h2>
+      <p>
+        Faith is not scheduled into a corner of the week at NoorBridge — it shapes how classes open,
+        how students are corrected, and how success is defined. Our Islamic curriculum grows in
+        depth and nuance as students do, from first letters of Qur'an to reflective discussions on
+        contemporary Muslim identity.
+      </p>
+      <ul class="check-list">
+        <li>Daily Qur'an recitation, memorisation and tadabbur (reflection)</li>
+        <li>Progressive Islamic Studies: aqeedah, seerah, worship and akhlaq</li>
+        <li>Functional, confidence-building Arabic language lessons</li>
+        <li>Character and leadership formation through service and student voice</li>
+      </ul>
+      <a href="#admissions" class="btn btn-primary">Learn About Our Islamic Curriculum</a>
+    </div>
+    <div class="two-col-visual">
+      <div class="photo-frame" style="height:460px;">
+        <img src="https://images.pexels.com/photos/36319872/pexels-photo-36319872.jpeg?auto=compress&cs=tinysrgb&w=900"
+             alt="Mother and daughter reading the Qur'an together" loading="lazy">
+        <div class="photo-caption">
+          <p>“We prepare children for faith, university, career and modern life — through live teaching and personal mentoring.”</p>
+          <span>— NoorBridge, School Ethos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PASTORAL CARE & WELLBEING ===== -->
+<section class="section" id="wellbeing">
+  <div class="container">
+    <p class="section-tag">Beyond Academics</p>
+    <h2>Pastoral care and wellbeing, woven into every week</h2>
+    <p class="section-lede">
+      A child who feels cared for learns better. Alongside academics, every learner is supported
+      spiritually, emotionally and physically — not just assessed on grades.
+    </p>
+
+    <div class="wellbeing-grid">
+      <div class="wellbeing-card">
+        <span class="wellbeing-icon">🤝</span>
+        <h3>Tarbiyah &amp; Spiritual Mentoring</h3>
+        <p>Regular mentoring sessions build character and God-consciousness alongside academic learning, not separate from it.</p>
+      </div>
+      <div class="wellbeing-card">
+        <span class="wellbeing-icon">🏡</span>
+        <h3>Family-Style Pastoral Groups</h3>
+        <p>Small pastoral groups give every learner a teacher who knows them personally and checks in regularly.</p>
+      </div>
+      <div class="wellbeing-card">
+        <span class="wellbeing-icon">🤸</span>
+        <h3>Weekly Fitness &amp; Movement</h3>
+        <p>Live, guided physical activity sessions keep learners active and energised — no equipment required.</p>
+      </div>
+      <div class="wellbeing-card">
+        <span class="wellbeing-icon">💬</span>
+        <h3>Wellbeing Check-Ins</h3>
+        <p>Regular, low-pressure check-ins help us catch and support any learner who needs extra care early.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI LEARNING ===== -->
+<section class="section" id="ai-learning">
+  <div class="container two-col reverse">
+    <div class="two-col-visual">
+      <div class="dashboard-mock">
+        <div class="dashboard-mock-header">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="dashboard-title">Student Progress · Live</span>
+        </div>
+        <div class="dashboard-row">
+          <span>Mathematics — Fractions</span>
+          <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
+        </div>
+        <div class="dashboard-row">
+          <span>Qur'an — Juz' 3 Memorisation</span>
+          <div class="bar"><div class="bar-fill" style="width:64%"></div></div>
+        </div>
+        <div class="dashboard-row">
+          <span>English — Comprehension</span>
+          <div class="bar"><div class="bar-fill" style="width:91%"></div></div>
+        </div>
+        <div class="dashboard-badges">
+          <span class="badge">🔥 7-day streak</span>
+          <span class="badge">🏆 Career Explorer</span>
+        </div>
+      </div>
+    </div>
+    <div class="two-col-text">
+      <p class="section-tag">Adaptive Learning</p>
+      <h2>Learning that adapts to the child, not the other way around</h2>
+      <p>
+        Every student learns differently, so our adaptive learning model adjusts pace, practice and
+        support to how each child actually learns best. Behind every live lesson sits a system that
+        notices where a student is stuck, offers targeted extra practice, and gives parents an
+        honest, easy-to-read picture of progress and emerging talents — in one place.
+      </p>
+      <ul class="check-list">
+        <li>Personalised, adaptive practice after every topic</li>
+        <li>Talent and strength mapping alongside academic grades</li>
+        <li>Plain-language progress dashboards for parents</li>
+        <li>Early alerts to teachers when a learner needs support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW WE DELIVER LESSONS ===== -->
+<section class="section section-alt" id="delivery">
+  <div class="container">
+    <p class="section-tag">How We Deliver Lessons</p>
+    <h2>One simple rhythm — before, during and after every lesson</h2>
+    <p class="section-lede">
+      Live teaching sits at the centre of NoorBridge, supported by a clear, predictable routine so
+      students always know what to do next and parents always know what's happening.
+    </p>
+
+    <div class="delivery-phases">
+      <div class="delivery-phase">
+        <div class="delivery-phase-head">
+          <span class="delivery-phase-icon">🗓️</span>
+          <h3>Before Class</h3>
+        </div>
+        <ol class="delivery-steps">
+          <li><strong>Check the timetable</strong><span>Every learner has a personalised calendar showing upcoming live lessons at a glance.</span></li>
+          <li><strong>Access lesson resources</strong><span>Reading materials and preparation resources are ready in the dashboard ahead of each topic.</span></li>
+        </ol>
+      </div>
+
+      <div class="delivery-phase">
+        <div class="delivery-phase-head">
+          <span class="delivery-phase-icon">🎥</span>
+          <h3>During Class</h3>
+        </div>
+        <ol class="delivery-steps">
+          <li><strong>Join with one click</strong><span>Learners join their scheduled live class directly from the dashboard, right on time.</span></li>
+          <li><strong>Learn in real time</strong><span>Live teaching with a subject specialist and classmates — not pre-recorded video.</span></li>
+          <li><strong>Ask &amp; interact live</strong><span>Questions, discussion and live chat keep every learner actively involved, not just watching.</span></li>
+        </ol>
+      </div>
+
+      <div class="delivery-phase">
+        <div class="delivery-phase-head">
+          <span class="delivery-phase-icon">📝</span>
+          <h3>After Class</h3>
+        </div>
+        <ol class="delivery-steps">
+          <li><strong>Submit homework</strong><span>Assignments are completed and uploaded straight through the student dashboard.</span></li>
+          <li><strong>Rewatch anytime</strong><span>Every lesson is recorded, so revision or catching up after an absence is never a problem.</span></li>
+          <li><strong>Review marks &amp; feedback</strong><span>Grades and teacher feedback appear as soon as work is marked — no waiting.</span></li>
+        </ol>
+      </div>
+
+      <div class="delivery-phase">
+        <div class="delivery-phase-head">
+          <span class="delivery-phase-icon">🏅</span>
+          <h3>Progress &amp; Recognition</h3>
+        </div>
+        <ol class="delivery-steps">
+          <li><strong>Track attendance</strong><span>A clear, always-visible attendance record for both learners and parents.</span></li>
+          <li><strong>Earn recognition</strong><span>Digital badges and rewards celebrate effort, attendance and achievement along the way.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAMME MODELS ===== -->
+<section class="section" id="programmes">
+  <div class="container">
+    <p class="section-tag">Choose Your Learning Track</p>
+    <h2>One curriculum, three ways to learn it</h2>
+    <p class="section-lede">
+      Every family's needs are different. NoorBridge offers the same accredited curriculum through
+      three distinct learning tracks, so you can choose the format that suits your child best.
+    </p>
+
+    <div class="programme-grid">
+      <div class="programme-card programme-featured">
+        <span class="programme-badge">Most Popular</span>
+        <div class="programme-icon">👥</div>
+        <h3>Live Group Classes</h3>
+        <p>Small, live cohorts taught daily by a subject specialist — the full NoorBridge experience, with peer interaction and structured pacing.</p>
+        <ul class="check-list">
+          <li>Daily live lessons, Year 1–13</li>
+          <li>Small class sizes</li>
+          <li>Full academic &amp; Islamic curriculum</li>
+        </ul>
+      </div>
+      <div class="programme-card">
+        <div class="programme-icon">🧑‍🏫</div>
+        <h3>One-to-One Tutoring</h3>
+        <p>Individual live sessions for learners who need focused intervention, extra support, or a faster pace in specific subjects.</p>
+        <ul class="check-list">
+          <li>Any subject, any school</li>
+          <li>Flexible after-school timing</li>
+          <li>Ideal for catching up or getting ahead</li>
+        </ul>
+        <a href="#tutoring" class="btn btn-outline">Learn About Tutoring</a>
+      </div>
+      <div class="programme-card">
+        <div class="programme-icon">🗂️</div>
+        <h3>Flexible Independent Study</h3>
+        <p>Structured self-paced coursework with regular teacher check-ins — for families who need a more flexible daily schedule.</p>
+        <ul class="check-list">
+          <li>Self-paced, teacher-marked work</li>
+          <li>Regular progress check-ins</li>
+          <li>Same accredited curriculum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAREER PATHWAYS ===== -->
+<section class="section section-alt" id="careers">
+  <div class="container">
+    <p class="section-tag">Beyond the Classroom</p>
+    <h2>We discover your child's talents — and direct them to the future that fits</h2>
+    <p class="section-lede">
+      Our curriculum is designed to let students discover themselves. Through guided projects,
+      mentoring and reflection from the primary years onward, we help every child understand what
+      they are naturally good at, so their choices at IGCSE and A Level — and the career path
+      beyond — are informed by real strengths, not guesswork.
+    </p>
+
+    <div class="career-grid">
+      <div class="career-card">
+        <span class="career-emoji">🔬</span>
+        <h3>Science &amp; Medicine</h3>
+        <p>Hands-on experiments and guided projects that build early scientific thinking.</p>
+      </div>
+      <div class="career-card">
+        <span class="career-emoji">💻</span>
+        <h3>Technology &amp; AI</h3>
+        <p>Safe AI use, coding fundamentals and digital problem-solving from an early age.</p>
+      </div>
+      <div class="career-card">
+        <span class="career-emoji">📈</span>
+        <h3>Business &amp; Finance</h3>
+        <p>Practical financial literacy and entrepreneurship woven into real-world tasks.</p>
+      </div>
+      <div class="career-card">
+        <span class="career-emoji">🎨</span>
+        <h3>Design &amp; Impact</h3>
+        <p>Creative and social-impact projects that connect talent with purpose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TUITION & FEES ===== -->
+<section class="section" id="fees">
+  <div class="container">
+    <p class="section-tag">Investing in Your Child</p>
+    <h2>Simple, transparent tuition</h2>
+    <p class="section-lede">
+      Priced deliberately in the middle: well above a bare-minimum offering, but a fraction of
+      typical UK-based online school fees — because quality British-Islamic education shouldn't be
+      out of reach for families anywhere in the world.
+    </p>
+
+    <div class="fees-grid fees-grid-5">
+      <div class="fee-card">
+        <p class="fee-years">Years 1 – 3</p>
+        <p class="fee-amount"><sup>$</sup>120</p>
+        <p class="fee-period">per learner / month</p>
+        <ul>
+          <li>Core subjects + Qur'an &amp; Arabic</li>
+          <li>Live daily classes</li>
+          <li>Parent progress dashboard</li>
+        </ul>
+      </div>
+      <div class="fee-card">
+        <p class="fee-years">Years 4 – 6</p>
+        <p class="fee-amount"><sup>$</sup>145</p>
+        <p class="fee-period">per learner / month</p>
+        <ul>
+          <li>Full primary curriculum</li>
+          <li>Adaptive practice access</li>
+          <li>Career discovery projects</li>
+        </ul>
+      </div>
+      <div class="fee-card featured">
+        <p class="fee-years">Years 7 – 9</p>
+        <p class="fee-amount"><sup>$</sup>185</p>
+        <p class="fee-period">per learner / month</p>
+        <ul>
+          <li>Subject-specialist teaching</li>
+          <li>Study skills &amp; mentoring</li>
+          <li>Progress &amp; skills tracking</li>
+        </ul>
+      </div>
+      <div class="fee-card">
+        <p class="fee-years">Years 10 – 11</p>
+        <p class="fee-amount"><sup>$</sup>225</p>
+        <p class="fee-period">per learner / month</p>
+        <ul>
+          <li>Pearson Edexcel IGCSE pathway</li>
+          <li>Exam board resources</li>
+          <li>Full exam readiness support</li>
+        </ul>
+      </div>
+      <div class="fee-card">
+        <p class="fee-years">Years 12 – 13</p>
+        <p class="fee-amount"><sup>$</sup>275</p>
+        <p class="fee-period">per learner / month</p>
+        <ul>
+          <li>Choose any 3 A Level subjects</li>
+          <li>University application guidance</li>
+          <li>Extra subjects available at add-on cost</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fees-note">
+      <div class="fees-note-item">
+        <strong>$50 Registration</strong>
+        <span>One-time annual registration fee per learner</span>
+      </div>
+      <div class="fees-note-item">
+        <strong>10% Off</strong>
+        <span>When the full academic year is paid upfront</span>
+      </div>
+      <div class="fees-note-item">
+        <strong>5% Off</strong>
+        <span>Per additional sibling enrolled</span>
+      </div>
+      <div class="fees-note-item">
+        <strong>$20 Referral Credit</strong>
+        <span>For every family you refer who enrols</span>
+      </div>
+    </div>
+    <p class="fees-disclaimer">
+      Prefer to spread costs differently? Pay monthly (10 instalments), termly (3 instalments,
+      small discount) or annually upfront (largest discount). Fees shown are indicative starting
+      rates in USD, billed per learner. Final fees are confirmed during your admissions consultation.
+    </p>
+
+    <div class="refund-assurance">
+      <div class="refund-icon">✓</div>
+      <div>
+        <h3>Not the right fit? Get a full refund.</h3>
+        <p>If you're not satisfied within the first two weeks of live lessons, let us know in writing
+        and we'll refund your tuition in full — no complicated process, no hard feelings. Registration
+        fees are non-refundable once admission is confirmed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AFTER-SCHOOL TUTORING ===== -->
+<section class="section section-alt" id="tutoring">
+  <div class="container two-col">
+    <div class="two-col-text">
+      <p class="section-tag">Not Ready to Switch Schools?</p>
+      <h2>After-school tutoring, in any subject, for students at any school</h2>
+      <p>
+        You don't need to be enrolled at NoorBridge to learn with us. Our educators also offer
+        one-to-one and small-group tutoring after school hours — for students who need extra
+        support in a specific subject, want to catch up, or simply want to get ahead, wherever they
+        currently attend school.
+      </p>
+      <ul class="check-list">
+        <li>Support in any subject — Maths, English, Science, Arabic, Qur'an and more</li>
+        <li>Flexible after-school timing, built around your child's existing school day</li>
+        <li>One-to-one or small-group sessions with vetted, qualified educators</li>
+        <li>Open to students at NoorBridge and at any other school</li>
+      </ul>
+      <a href="#admissions" class="btn btn-primary">Book a Tutoring Session</a>
+    </div>
+    <div class="two-col-visual">
+      <div class="photo-frame" style="height:400px;">
+        <img src="https://images.pexels.com/photos/6937753/pexels-photo-6937753.jpeg?auto=compress&cs=tinysrgb&w=900"
+             alt="A confident tutor in hijab teaching a one-to-one lesson" loading="lazy">
+        <div class="photo-caption">
+          <p>“Extra help, in the subject that matters most, without changing schools.”</p>
+          <span>— NoorBridge Tutoring</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT US ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <p class="section-tag">Talk To Us</p>
+    <h2>However you'd like to reach us, we're listening</h2>
+    <p class="section-lede">
+      No call centres, no long queues — just a real admissions team, reachable the way that suits you.
+    </p>
+
+    <div class="contact-grid">
+      <a href="https://wa.me/000000000000" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-card-icon contact-icon-whatsapp">💬</div>
+        <h3>WhatsApp</h3>
+        <p>Message our admissions team directly</p>
+      </a>
+      <a href="mailto:admissions@noorbridge.school" class="contact-card">
+        <div class="contact-card-icon contact-icon-email">✉️</div>
+        <h3>Email Us</h3>
+        <p>admissions@noorbridge.school</p>
+      </a>
+      <a href="#admissions" class="contact-card">
+        <div class="contact-card-icon contact-icon-call">📞</div>
+        <h3>Request a Call</h3>
+        <p>Book a free consultation call at a time that suits you</p>
+      </a>
+      <a href="#openhouse" class="contact-card">
+        <div class="contact-card-icon contact-icon-open">🗓️</div>
+        <h3>Online Open House</h3>
+        <p>Join our weekly live Q&amp;A with the Head of School</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ADMISSIONS ===== -->
+<section class="section section-dark" id="admissions">
+  <div class="container">
+    <p class="section-tag section-tag-light">Join NoorBridge</p>
+    <h2 class="light-heading">A simple path from first question to first lesson</h2>
+    <p class="section-lede light-lede">
+      We keep admissions clear and human. Most families move from enquiry to enrolment in a matter
+      of days.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Discover</h3>
+        <p>Explore the curriculum and ethos, then book a free consultation with our admissions team.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Consult</h3>
+        <p>A short call to understand your child's needs and answer every question, honestly.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Assess</h3>
+        <p>A friendly placement check helps us understand your child's current level.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Enrol</h3>
+        <p>Complete registration, receive your class access, and meet your child's teachers.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <h3>Begin</h3>
+        <p>Your child joins live lessons and their personalised learning journey begins.</p>
+      </div>
+    </div>
+
+    <div class="openhouse-card" id="openhouse">
+      <div class="openhouse-text">
+        <span class="openhouse-tag">Every Saturday</span>
+        <h3>Meet our Head of School — live, online</h3>
+        <p>Join our weekly Online Open House to meet the Head of School over video call, ask questions
+        candidly, and see what a NoorBridge lesson actually looks like — no commitment required.</p>
+      </div>
+      <a href="#admissions" class="btn btn-light btn-lg">Sign Up for the Open House</a>
+    </div>
+
+    <div class="admissions-form-wrap">
+      <form class="admissions-form" id="admissionsForm">
+        <h3>Admission Enquiry Form</h3>
+        <p>Complete the form below and our admissions team will contact you to arrange a consultation and placement check.</p>
+
+        <p class="form-section-title">Learner Details</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="learnerName">Learner's Full Name (as on Passport/ID)</label>
+            <input type="text" id="learnerName" name="learnerName" required>
+          </div>
+          <div class="field">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" disabled selected>Select</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" required>
+          </div>
+          <div class="field">
+            <label for="country">Country of Residence</label>
+            <input type="text" id="country" name="country" required>
+          </div>
+          <div class="field">
+            <label for="city">City of Residence</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          <div class="field">
+            <label for="nativeLanguage">Learner's Native Language</label>
+            <input type="text" id="nativeLanguage" name="nativeLanguage">
+          </div>
+          <div class="field">
+            <label for="otherLanguages">Other Fluent Languages</label>
+            <input type="text" id="otherLanguages" name="otherLanguages">
+          </div>
+        </div>
+
+        <p class="form-section-title">Academic Placement</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="currentYear">Current Year Group (if enrolled elsewhere)</label>
+            <select id="currentYear" name="currentYear">
+              <option value="" disabled selected>Select year group</option>
+              <option>Not yet enrolled</option>
+              <option>Year 1</option><option>Year 2</option><option>Year 3</option>
+              <option>Year 4</option><option>Year 5</option><option>Year 6</option>
+              <option>Year 7</option><option>Year 8</option><option>Year 9</option>
+              <option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="applyingYear">Year Group Applying For</label>
+            <select id="applyingYear" name="applyingYear" required>
+              <option value="" disabled selected>Select year group</option>
+              <option>Year 1</option><option>Year 2</option><option>Year 3</option>
+              <option>Year 4</option><option>Year 5</option><option>Year 6</option>
+              <option>Year 7</option><option>Year 8</option><option>Year 9</option>
+              <option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="siblings">Sibling(s) Enrolling Alongside</label>
+            <input type="text" id="siblings" name="siblings" placeholder="Full name(s), or leave blank">
+          </div>
+          <div class="field">
+            <label for="startDate">Preferred Start Date</label>
+            <input type="date" id="startDate" name="startDate">
+          </div>
+        </div>
+
+        <p class="form-section-title">Parent / Guardian Details</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="parentName">Parent / Guardian Full Name</label>
+            <input type="text" id="parentName" name="parentName" required>
+          </div>
+          <div class="field">
+            <label for="relationship">Relationship to Learner</label>
+            <select id="relationship" name="relationship" required>
+              <option value="" disabled selected>Select</option>
+              <option>Father</option><option>Mother</option><option>Guardian</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone / WhatsApp Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Anything you'd like us to know?</label>
+          <textarea id="message" name="message" rows="3" placeholder="Learning needs, current school, goals for your child, questions for our admissions team..."></textarea>
+        </div>
+
+        <label class="field-checkbox">
+          <input type="checkbox" id="consent" name="consent" required>
+          <span>I agree to be contacted by NoorBridge's admissions team regarding this enquiry and consent to our Terms &amp; Privacy Policy.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Enquiry &amp; Request Callback</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="container">
+    <p class="section-tag">Good to Know</p>
+    <h2>Frequently asked questions</h2>
+
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          What curriculum framework does NoorBridge follow?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>We follow the British National Curriculum consistently from Year 1 to Year 13, leading to
+          worldwide accredited Pearson Edexcel IGCSE and A Level qualifications, alongside our own
+          Islamic and Arabic curriculum taught in parallel. Every stage is also designed to help
+          students discover their own skills, strengths and talents, so subject and career choices
+          later on are guided rather than guessed.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          How does NoorBridge help my child discover their talents and career direction?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Through continuous assessment, adaptive learning and guided projects, our teachers build
+          a real picture of each child's strengths over time. Mentors use this picture to guide subject
+          choices at IGCSE and A Level, and to point students toward career paths that genuinely fit
+          their skills — not a generic list of options.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          Do I need to leave my child's current school to get support from NoorBridge?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>No. Alongside full-time enrolment, NoorBridge also offers after-school tutoring in any
+          subject for students at any school. It's a flexible way to get extra support, catch up or
+          get ahead, without changing schools.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          How do live online lessons actually work?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Classes run live in small groups with real teachers, using structured schedules that leave
+          room for family time, worship and rest. Recorded resources and practice materials are available
+          for review between lessons.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          Is the Islamic curriculum suitable for children with no prior Arabic?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes. Arabic and Qur'an lessons are differentiated by starting level, so both native and
+          non-native speakers progress at a pace that builds real confidence.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          What technology do we need at home?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>A stable internet connection and a laptop, tablet or desktop with a camera and microphone
+          are sufficient. No specialist software or equipment is required.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          How is my child's progress reported to me?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Parents receive an easy-to-read dashboard covering attendance, homework and progress, plus
+          formal reports and parent-teacher conversations across the school year.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          Is there an entrance assessment?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes, a short and friendly placement check helps us understand your child's current level so
+          we can support them properly from their very first lesson.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container cta-banner-inner">
+    <div>
+      <h2>Our founding cohort is now enrolling.</h2>
+      <p>Places are limited while we keep class sizes small and personal. Reserve your child's seat today.</p>
+    </div>
+    <a href="#admissions" class="btn btn-light btn-lg">Start the Enrolment Process</a>
+  </div>
+</section>
+
+<!-- ===== RECOGNITION & NEWSLETTER ===== -->
+<section class="recognition">
+  <div class="container">
+    <p class="recognition-label">Learners Joining NoorBridge From</p>
+    <div class="country-row">
+      <span>United Arab Emirates</span>
+      <span>Saudi Arabia</span>
+      <span>Qatar</span>
+      <span>United Kingdom</span>
+      <span>Malaysia</span>
+      <span>Egypt</span>
+      <span>South Africa</span>
+      <span>United States</span>
+      <span>Canada</span>
+      <span>Australia</span>
+    </div>
+
+    <div class="recognition-badges">
+      <div class="recognition-badge">
+        <span class="recognition-icon">🇬🇧</span>
+        <p>British National<br>Curriculum</p>
+      </div>
+      <div class="recognition-badge">
+        <span class="recognition-icon">🎓</span>
+        <p>Pearson Edexcel<br>Exam Board</p>
+      </div>
+      <div class="recognition-badge">
+        <span class="recognition-icon">🔒</span>
+        <p>Safeguarding &amp;<br>Data Protection Compliant</p>
+      </div>
+      <div class="recognition-badge">
+        <span class="recognition-icon">🌍</span>
+        <p>Open to Families<br>Worldwide</p>
+      </div>
+    </div>
+
+    <div class="examboards-card">
+      <h3>Exam Boards</h3>
+      <div class="examboards-row">
+        <span class="examboard-mark examboard-edexcel">
+          edexcel
+          <span class="examboard-dots" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </span>
+        </span>
+        <span class="examboard-mark examboard-cambridge">
+          Cambridge<span>International</span>
+        </span>
+      </div>
+      <p class="examboards-note">Primary exam board: Pearson Edexcel. Cambridge International available for select subjects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-pattern" aria-hidden="true"></div>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name-group">
+        <span class="brand-name">NoorBridge</span>
+        <span class="brand-tagline">Islamic British School</span>
+      </span>
+      <p>A live online school following the British National Curriculum to worldwide accredited
+      Pearson Edexcel IGCSE and A Level certificates — with adaptive learning that discovers every
+      child's talent and guides them toward the future that fits.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-link-list">
+        <li><a href="#pathway">Curriculum &amp; Programmes</a></li>
+        <li><a href="#fees">Admissions &amp; Fees</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Safeguarding Policy</a></li>
+        <li><a href="mailto:careers@noorbridge.school">Careers &amp; Staff Application</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="footer-contact-icon">📍</span>
+          <span>Live online, serving families worldwide</span>
+        </li>
+        <li>
+          <span class="footer-contact-icon">✉️</span>
+          <a href="mailto:admissions@noorbridge.school">admissions@noorbridge.school</a>
+        </li>
+        <li>
+          <span class="footer-contact-icon">📞</span>
+          <a href="https://wa.me/000000000000" target="_blank" rel="noopener">WhatsApp Admissions</a>
+        </li>
+      </ul>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.9.2-1.5 1.6-1.5h1.6V4.2C15.9 4.1 14.8 4 13.6 4c-2.6 0-4.4 1.6-4.4 4.5v2.3h-3v3h3V21h3.3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.3.1 1.3.1 1.6.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.3.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.3-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1 0-1.6.2-1.9.3-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.3-.3.9-.3 1.9-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 1 .2 1.6.3 1.9.2.5.4.8.8 1.2.4.4.7.6 1.2.8.3.1.9.3 1.9.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1 0 1.6-.2 1.9-.3.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.3.3-.9.3-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1-.2-1.6-.3-1.9-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.3-.1-.9-.3-1.9-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 1.8a2.7 2.7 0 100 5.4 2.7 2.7 0 000-5.4zm5.7-3.6a1.1 1.1 0 110 2.1 1.1 1.1 0 010-2.1z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.9 4 12 4 12 4h0s-3.9 0-6.7.2c-.4 0-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2.2 9 2.2 10.7v1.5c0 1.8.2 3.5.2 3.5s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.6.2 6.5.2 6.5.2s3.9 0 6.7-.2c.4 0 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.5v-1.5c0-1.8-.2-3.5-.2-3.5zM9.9 14.6V8.9l5.4 2.9-5.4 2.8z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.9 8.4H3.6V20h3.3V8.4zM5.3 3.6a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8zM20.4 20h-3.3v-6.2c0-1.5-.5-2.5-1.8-2.5-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9V20H10c0-11.6 0-11.6 0-11.6h3.3v1.7c.4-.7 1.3-1.7 3-1.7 2.2 0 3.9 1.4 3.9 4.5V20z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col footer-subscribe">
+      <h4>Subscribe</h4>
+      <form class="subscribe-form" id="newsletterForm">
+        <input type="text" name="subscribeName" placeholder="Full Name" required>
+        <input type="tel" name="subscribePhone" placeholder="Phone Number">
+        <input type="email" name="subscribeEmail" placeholder="Email Address" required>
+        <select name="subscribeYear" aria-label="Year group of interest" required>
+          <option value="" disabled selected>Year Group</option>
+          <option>Year 1</option><option>Year 2</option><option>Year 3</option>
+          <option>Year 4</option><option>Year 5</option><option>Year 6</option>
+          <option>Year 7</option><option>Year 8</option><option>Year 9</option>
+          <option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option>
+        </select>
+        <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 NoorBridge Islamic British School. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
