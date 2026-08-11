@@ -75,6 +75,7 @@ img { max-width: 100%; display: block; }
 .btn-light { background: var(--white); color: var(--emerald-900); }
 .btn-light:hover { background: var(--gold-400); color: var(--ink-900); }
 .btn-lg { padding: 15px 28px; font-size: 1.02rem; }
+.btn-sm { padding: 7px 14px; font-size: 0.78rem; }
 .btn-block { width: 100%; }
 .btn-gold {
   background: linear-gradient(135deg, var(--gold-400), var(--gold-500));
@@ -329,6 +330,24 @@ img { max-width: 100%; display: block; }
 .card-2 { top: 170px; right: -10px; animation: float 7s ease-in-out infinite .5s; }
 .card-3 { bottom: 10px; left: 40px; animation: float 6.5s ease-in-out infinite 1s; }
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+.hero-tutoring {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  background: var(--white);
+  border-radius: 999px;
+  box-shadow: var(--shadow-lift);
+  padding: 8px 12px 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+.hero-tutoring-text { white-space: nowrap; }
 
 /* ---------- Strip ---------- */
 .strip { background: var(--emerald-900); padding: 18px 0; }
@@ -1202,32 +1221,4 @@ img { max-width: 100%; display: block; }
 .main-nav.open .nav-group.open .nav-dropdown { display: flex; }
 .main-nav.open .nav-dropdown a { padding: 10px 12px; }
 
-/* ---------- Tutoring promo ---------- */
-.tutoring-promo { padding: 64px 0 32px; }
-.tutoring-promo-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 32px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.tutoring-promo-text h2 {
-  font-size: 1.7rem;
-  margin: 0 0 6px;
-  color: var(--ink-900);
-}
-.tutoring-promo-text p {
-  margin: 0;
-  color: var(--ink-700);
-  font-size: 1rem;
-}
 
-@media (max-width: 760px) {
-  .tutoring-promo { padding: 40px 0 16px; }
-  .tutoring-promo-card { flex-direction: column; align-items: stretch; gap: 18px; padding: 26px 28px; }
-  .tutoring-promo-text h2 { font-size: 1.35rem; }
-}
