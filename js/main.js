@@ -1,9 +1,8 @@
 // ============================================================
-// NoorBridge Academy — Landing Page Interactions
+// NoorBridge Academy — Site Interactions
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', () => {
-
   // ---- Mobile nav toggle ----
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = mainNav.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', String(isOpen));
       if (!isOpen) {
-        mainNav.querySelectorAll('.nav-group.open').forEach(g => g.classList.remove('open'));
+        mainNav.querySelectorAll('.nav-group.open').forEach(group => group.classList.remove('open'));
       }
     });
 
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         mainNav.classList.remove('open');
         navToggle.setAttribute('aria-expanded', 'false');
-        mainNav.querySelectorAll('.nav-group.open').forEach(g => g.classList.remove('open'));
+        mainNav.querySelectorAll('.nav-group.open').forEach(group => group.classList.remove('open'));
       });
     });
   }
@@ -31,17 +30,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navGroups.forEach(group => {
     const trigger = group.querySelector('.nav-group-trigger');
-    trigger.addEventListener('click', (e) => {
-      e.stopPropagation();
+    if (!trigger) return;
+
+    trigger.addEventListener('click', (event) => {
+      event.stopPropagation();
       const isOpen = group.classList.contains('open');
-      navGroups.forEach(g => g.classList.remove('open'));
+      navGroups.forEach(otherGroup => otherGroup.classList.remove('open'));
       if (!isOpen) group.classList.add('open');
     });
   });
 
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-group')) {
-      navGroups.forEach(g => g.classList.remove('open'));
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.nav-group')) {
+      navGroups.forEach(group => group.classList.remove('open'));
+    }
+  });
+
+  // ---- Active page navigation ----
+  const currentPage = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  document.querySelectorAll('.main-nav .nav-dropdown a, .main-nav .nav-single').forEach(link => {
+    const target = new URL(link.href, window.location.href);
+    const targetPage = (target.pathname.split('/').pop() || 'index.html').toLowerCase();
+    if (targetPage !== currentPage) return;
+
+    const group = link.closest('.nav-group');
+    if (group) {
+      group.classList.add('active');
+    } else {
+      link.classList.add('active');
     }
   });
 
@@ -51,19 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
   accordionItems.forEach(item => {
     const trigger = item.querySelector('.accordion-trigger');
     const panel = item.querySelector('.accordion-panel');
+    if (!trigger || !panel) return;
 
     trigger.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
 
-      // close all other panels
       accordionItems.forEach(other => {
+        const otherPanel = other.querySelector('.accordion-panel');
         other.classList.remove('open');
-        other.querySelector('.accordion-panel').style.maxHeight = null;
+        if (otherPanel) otherPanel.style.maxHeight = null;
       });
 
       if (!isOpen) {
         item.classList.add('open');
-        panel.style.maxHeight = panel.scrollHeight + 'px';
+        panel.style.maxHeight = `${panel.scrollHeight}px`;
       }
     });
   });
@@ -72,35 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('admissionsForm');
   const formNote = document.getElementById('formNote');
 
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const parentName = document.getElementById('parentName').value.trim();
+  if (form && formNote) {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const parentNameField = document.getElementById('parentName');
+      const parentName = parentNameField ? parentNameField.value.trim() : '';
 
       formNote.textContent = `Thank you${parentName ? ', ' + parentName : ''}! Our admissions team will reach out within one business day.`;
       form.reset();
     });
   }
-
-  // ---- Highlight active nav link on scroll ----
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.main-nav .nav-dropdown a, .main-nav .nav-single');
-
-  const setActive = () => {
-    let currentId = '';
-    sections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= 120 && rect.bottom >= 120) {
-        currentId = section.id;
-      }
-    });
-    navLinks.forEach(link => {
-      link.style.color = link.getAttribute('href') === `#${currentId}` ? 'var(--emerald-700)' : '';
-    });
-  };
-
-  window.addEventListener('scroll', setActive, { passive: true });
-  setActive();
 
   // ---- Back to top button ----
   const backToTop = document.getElementById('backToTop');
@@ -121,9 +119,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsletterForm = document.getElementById('newsletterForm');
 
   if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+    newsletterForm.addEventListener('submit', event => {
+      event.preventDefault();
       const button = newsletterForm.querySelector('button');
+      if (!button) return;
+
       const originalText = button.textContent;
       button.textContent = 'Subscribed!';
       newsletterForm.reset();
