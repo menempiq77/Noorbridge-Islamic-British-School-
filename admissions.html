@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admissions — NoorBridge Islamic British School</title>
-<meta name="description" content="Follow NoorBridge's simple admissions process and submit an enquiry for your learner." />
+<meta name="description" content="Follow NoorBridge's simple admissions process and submit an enquiry for your learner.">
+<meta property="og:title" content="Admissions — NoorBridge Islamic British School">
+<meta property="og:description" content="Follow NoorBridge's simple admissions process and submit an enquiry for your learner.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +14,6 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <!-- ===== SHARED HEADER / NAV ===== -->
 <!-- ===== HEADER ===== -->
 <header class="site-header" id="top">
@@ -75,13 +76,23 @@
           <a href="faq.html#faq">FAQs</a>
         </div>
       </div>
+      <div class="nav-group">
+        <button type="button" class="nav-group-trigger">Key Stages <span class="nav-caret">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="stage-primary.html">Primary · Years 1–6</a>
+          <a href="stage-lower-secondary.html">Lower Secondary · Years 7–9</a>
+          <a href="stage-gcse.html">IGCSE · Years 10–11</a>
+          <a href="stage-sixth-form.html">Sixth Form · Years 12–13</a>
+          <a href="stages.html">All Key Stages</a>
+        </div>
+      </div>
       <a href="global-reach.html#global" class="nav-single">Global Reach</a>
       <a href="contact.html#contact" class="nav-single">Contact</a>
     </nav>
 
     <div class="header-actions">
-      <a href="admissions.html#admissions" class="btn btn-ghost">Book a Call</a>
-      <a href="admissions.html#admissions" class="btn btn-primary">Apply Now</a>
+      <a href="admissions.html#admissions" class="btn btn-primary">Book a Free Trial Lesson</a>
+      <a href="admissions.html#admissions" class="btn btn-ghost">Apply Now</a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -173,115 +184,57 @@
       <form class="admissions-form" id="admissionsForm">
         <h3>Admission Enquiry Form</h3>
         <p>Complete the form below and our admissions team will contact you to arrange a consultation and placement check.</p>
-
-        <p class="form-section-title">Learner Details</p>
-        <div class="form-grid">
-          <div class="field">
-            <label for="learnerName">Learner's Full Name (as on Passport/ID)</label>
-            <input type="text" id="learnerName" name="learnerName" required>
-          </div>
-          <div class="field">
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
-          </div>
-          <div class="field">
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender" required>
-              <option value="" disabled selected>Select</option>
-              <option>Male</option>
-              <option>Female</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="nationality">Nationality</label>
-            <input type="text" id="nationality" name="nationality" required>
-          </div>
-          <div class="field">
-            <label for="country">Country of Residence</label>
-            <input type="text" id="country" name="country" required>
-          </div>
-          <div class="field">
-            <label for="city">City of Residence</label>
-            <input type="text" id="city" name="city" required>
-          </div>
-          <div class="field">
-            <label for="nativeLanguage">Learner's Native Language</label>
-            <input type="text" id="nativeLanguage" name="nativeLanguage">
-          </div>
-          <div class="field">
-            <label for="otherLanguages">Other Fluent Languages</label>
-            <input type="text" id="otherLanguages" name="otherLanguages">
-          </div>
+        <div class="admissions-sections">
+          <section class="admissions-block">
+            <h3><span>1</span>Programme</h3>
+            <div class="form-grid">
+              <div class="field"><label for="applyingStage">Stage</label><select id="applyingStage" name="stage" required><option value="" disabled selected>Select a stage</option><option>Primary · Years 1–6</option><option>Lower Secondary · Years 7–9</option><option>Pearson Edexcel IGCSE · Years 10–11</option><option>Pearson Edexcel A Level · Years 12–13</option></select></div>
+              <div class="field"><label for="applyingYear">Year Group Applying For</label><select id="applyingYear" name="applyingYear" required><option value="" disabled selected>Select year group</option><option>Year 1</option><option>Year 2</option><option>Year 3</option><option>Year 4</option><option>Year 5</option><option>Year 6</option><option>Year 7</option><option>Year 8</option><option>Year 9</option><option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option></select></div>
+              <div class="field"><label for="subscriptionLength">Subscription length</label><select id="subscriptionLength" name="subscriptionLength" required><option value="" disabled selected>Select a plan</option><option>Monthly</option><option>Term (12 weeks)</option><option>Full academic year (3 terms)</option></select></div>
+              <div class="field"><label for="learningTrack">Learning track</label><select id="learningTrack" name="learningTrack" required><option value="" disabled selected>Select a track</option><option>Live group classes</option><option>One-to-one tutoring</option><option>Flexible independent study</option></select></div>
+              <div class="field"><label for="preferredSession">Preferred session</label><select id="preferredSession" name="preferredSession" required><option>Morning</option><option>Evening</option></select></div>
+              <div class="field"><label for="startDate">Preferred Start Date</label><input type="date" id="startDate" name="startDate"></div>
+            </div>
+          </section>
+          <section class="admissions-block">
+            <h3><span>2</span>Student details</h3>
+            <div class="form-grid">
+              <div class="field"><label for="learnerName">Learner's Full Name (as on Passport/ID)</label><input type="text" id="learnerName" name="learnerName" required></div>
+              <div class="field"><label for="dob">Date of Birth</label><input type="date" id="dob" name="dob" required></div>
+              <div class="field"><label for="gender">Gender</label><select id="gender" name="gender" required><option value="" disabled selected>Select</option><option>Male</option><option>Female</option></select></div>
+              <div class="field"><label for="nationality">Nationality</label><input type="text" id="nationality" name="nationality" required></div>
+              <div class="field"><label for="country">Country of Residence</label><input type="text" id="country" name="country" required></div>
+              <div class="field"><label for="city">City of Residence</label><input type="text" id="city" name="city" required></div>
+              <div class="field"><label for="nativeLanguage">Learner's Native Language</label><input type="text" id="nativeLanguage" name="nativeLanguage"></div>
+              <div class="field"><label for="otherLanguages">Other Fluent Languages</label><input type="text" id="otherLanguages" name="otherLanguages"></div>
+              <div class="field"><label for="studentEmail">Student Email</label><input type="email" id="studentEmail" name="studentEmail"></div>
+              <div class="field"><label for="currentSchool">Current School</label><input type="text" id="currentSchool" name="currentSchool"></div>
+              <div class="field"><label for="currentYear">Current Year Group</label><select id="currentYear" name="currentYear"><option value="" selected>Select year group</option><option>Not yet enrolled</option><option>Year 1</option><option>Year 2</option><option>Year 3</option><option>Year 4</option><option>Year 5</option><option>Year 6</option><option>Year 7</option><option>Year 8</option><option>Year 9</option><option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option></select></div>
+            </div>
+            <div class="field"><label for="learningNeeds">Learning support needs</label><textarea id="learningNeeds" name="learningNeeds" rows="3" placeholder="Anything that would help us support your child well..."></textarea></div>
+            <div class="field"><label for="message">Anything else you'd like us to know?</label><textarea id="message" name="message" rows="3" placeholder="Goals for your child, questions for our admissions team..."></textarea></div>
+          </section>
+          <section class="admissions-block">
+            <h3><span>3</span>Parent / guardian details</h3>
+            <div class="form-grid">
+              <div class="field"><label for="parentName">Parent / Guardian Full Name</label><input type="text" id="parentName" name="parentName" required></div>
+              <div class="field"><label for="relationship">Relationship to Learner</label><select id="relationship" name="relationship" required><option value="" disabled selected>Select</option><option>Father</option><option>Mother</option><option>Guardian</option></select></div>
+              <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" required></div>
+              <div class="field"><label for="phone">WhatsApp Number</label><input type="tel" id="phone" name="phone" placeholder="+44 7700 900000" required></div>
+              <div class="field"><label for="parentCountry">Country of Residence</label><input type="text" id="parentCountry" name="parentCountry" required></div>
+              <div class="field"><label for="timeZone">Time zone</label><input type="text" id="timeZone" name="timeZone" placeholder="e.g. Gulf Standard Time"></div>
+              <div class="field"><label for="heardAbout">How did you hear about us?</label><select id="heardAbout" name="heardAbout"><option value="" selected>Select one</option><option>Friend or family</option><option>Search engine</option><option>Social media</option><option>Online event</option><option>Other</option></select></div>
+              <div class="field"><label for="siblings">Sibling(s) enrolling alongside</label><input type="text" id="siblings" name="siblings" placeholder="Full name(s), or leave blank"></div>
+            </div>
+          </section>
+          <section class="admissions-block">
+            <h3><span>4</span>Confirm</h3>
+            <label class="field-checkbox"><input type="checkbox" id="consent" name="consent" required><span>I agree to be contacted by NoorBridge's admissions team and accept the <a href="fees.html#fees">refund policy</a>.</span></label>
+            <label class="field-checkbox"><input type="checkbox" id="newsletterOptIn" name="newsletterOptIn"><span>I'd like occasional NoorBridge news and helpful updates.</span></label>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Enquiry &amp; Request Callback</button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </section>
         </div>
-
-        <p class="form-section-title">Academic Placement</p>
-        <div class="form-grid">
-          <div class="field">
-            <label for="currentYear">Current Year Group (if enrolled elsewhere)</label>
-            <select id="currentYear" name="currentYear">
-              <option value="" disabled selected>Select year group</option>
-              <option>Not yet enrolled</option>
-              <option>Year 1</option><option>Year 2</option><option>Year 3</option>
-              <option>Year 4</option><option>Year 5</option><option>Year 6</option>
-              <option>Year 7</option><option>Year 8</option><option>Year 9</option>
-              <option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="applyingYear">Year Group Applying For</label>
-            <select id="applyingYear" name="applyingYear" required>
-              <option value="" disabled selected>Select year group</option>
-              <option>Year 1</option><option>Year 2</option><option>Year 3</option>
-              <option>Year 4</option><option>Year 5</option><option>Year 6</option>
-              <option>Year 7</option><option>Year 8</option><option>Year 9</option>
-              <option>Year 10</option><option>Year 11</option><option>Year 12</option><option>Year 13</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="siblings">Sibling(s) Enrolling Alongside</label>
-            <input type="text" id="siblings" name="siblings" placeholder="Full name(s), or leave blank">
-          </div>
-          <div class="field">
-            <label for="startDate">Preferred Start Date</label>
-            <input type="date" id="startDate" name="startDate">
-          </div>
-        </div>
-
-        <p class="form-section-title">Parent / Guardian Details</p>
-        <div class="form-grid">
-          <div class="field">
-            <label for="parentName">Parent / Guardian Full Name</label>
-            <input type="text" id="parentName" name="parentName" required>
-          </div>
-          <div class="field">
-            <label for="relationship">Relationship to Learner</label>
-            <select id="relationship" name="relationship" required>
-              <option value="" disabled selected>Select</option>
-              <option>Father</option><option>Mother</option><option>Guardian</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="field">
-            <label for="phone">Phone / WhatsApp Number</label>
-            <input type="tel" id="phone" name="phone" required>
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="message">Anything you'd like us to know?</label>
-          <textarea id="message" name="message" rows="3" placeholder="Learning needs, current school, goals for your child, questions for our admissions team..."></textarea>
-        </div>
-
-        <label class="field-checkbox">
-          <input type="checkbox" id="consent" name="consent" required>
-          <span>I agree to be contacted by NoorBridge's admissions team regarding this enquiry and consent to our Terms &amp; Privacy Policy.</span>
-        </label>
-
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Enquiry &amp; Request Callback</button>
-        <p class="form-note" id="formNote"></p>
       </form>
     </div>
   </div>
