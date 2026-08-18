@@ -188,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const firstPayment = calculator.querySelector('[data-calc-first-payment]');
     const registrationFee = Number(calculator.dataset.registrationFee || 0);
     const formatCurrency = amount => `$${amount.toLocaleString(undefined, {
+      minimumFractionDigits: amount % 1 === 0 ? 0 : 2,
       maximumFractionDigits: 2
     })}`;
     const update = () => {
