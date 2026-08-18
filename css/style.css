@@ -1169,7 +1169,6 @@ img { max-width: 100%; display: block; }
   .fees-note { grid-template-columns: repeat(2, 1fr); }
   .recognition-badges { grid-template-columns: repeat(2, 1fr); }
   .openhouse-card { text-align: center; justify-content: center; }
-  .fab-stack { right: max(22px, calc(22px + 100vw - 100dvw)); }
 }
 @media (max-width: 760px) {
   .form-grid, .form-grid.cols-3 { grid-template-columns: 1fr; }
@@ -1184,7 +1183,7 @@ img { max-width: 100%; display: block; }
   .refund-assurance { flex-direction: column; }
   .footer-pattern { display: none; }
   .hifz-callout { flex-direction: column; align-items: flex-start; text-align: left; }
-  .fab-stack { right: max(16px, calc(16px + 100vw - 100dvw)); bottom: 16px; gap: 10px; }
+  .fab-stack { right: 16px; bottom: 16px; gap: 10px; }
   .whatsapp-fab, .back-to-top { width: 46px; height: 46px; }
   .tuition-fab { left: 16px; bottom: 16px; max-width: 170px; padding: 10px 12px; }
   .tuition-fab-text { font-size: 0.74rem; }
@@ -1602,8 +1601,4 @@ img { max-width: 100%; display: block; }
     width: 30px;
     padding: 0;
   }
-}
-
-@media (max-width: 340px) {
-  .fab-stack { right: 74px; }
 }
