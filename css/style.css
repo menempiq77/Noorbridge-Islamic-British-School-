@@ -919,6 +919,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.95rem;
   background: var(--parchment);
   color: var(--ink-900);
+  max-width: 100%;
 }
 .field input:focus, .field select:focus, .field textarea:focus {
   outline: none;
@@ -1160,7 +1161,7 @@ img { max-width: 100%; display: block; }
   .programme-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
-  .two-col { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: minmax(0, 1fr); }
   .two-col.reverse .two-col-visual { order: 0; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .gallery-strip { grid-template-columns: repeat(2, 1fr); }
@@ -1168,6 +1169,7 @@ img { max-width: 100%; display: block; }
   .fees-note { grid-template-columns: repeat(2, 1fr); }
   .recognition-badges { grid-template-columns: repeat(2, 1fr); }
   .openhouse-card { text-align: center; justify-content: center; }
+  .fab-stack { right: max(22px, calc(22px + 100vw - 100dvw)); }
 }
 @media (max-width: 760px) {
   .form-grid, .form-grid.cols-3 { grid-template-columns: 1fr; }
@@ -1182,7 +1184,7 @@ img { max-width: 100%; display: block; }
   .refund-assurance { flex-direction: column; }
   .footer-pattern { display: none; }
   .hifz-callout { flex-direction: column; align-items: flex-start; text-align: left; }
-  .fab-stack { right: 16px; bottom: 16px; gap: 10px; }
+  .fab-stack { right: max(16px, calc(16px + 100vw - 100dvw)); bottom: 16px; gap: 10px; }
   .whatsapp-fab, .back-to-top { width: 46px; height: 46px; }
   .tuition-fab { left: 16px; bottom: 16px; max-width: 170px; padding: 10px 12px; }
   .tuition-fab-text { font-size: 0.74rem; }
@@ -1493,7 +1495,9 @@ img { max-width: 100%; display: block; }
 .fee-card .btn { margin-top: 18px; }
 .fee-calculator { margin: 42px 0 28px; padding: 27px; border-radius: 20px; background: var(--emerald-100); }
 .fee-calculator h3 { margin-bottom: 16px; }
-.calculator-fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.calculator-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.calculator-fields .field,
+.admissions-block .field { min-width: 0; }
 .calculator-result { margin-top: 19px; padding-top: 18px; border-top: 1px solid rgba(10,55,96,.14); }
 .calculator-result strong { display: block; color: var(--emerald-900); font-family: var(--font-head); font-size: 2rem; }
 .calculator-result > span { display: block; margin-top: 5px; color: var(--ink-700); font-size: .85rem; }
@@ -1501,8 +1505,8 @@ img { max-width: 100%; display: block; }
 .calculator-breakdown div { padding: 14px; border-radius: 12px; background: rgba(255,255,255,.66); }
 .calculator-breakdown dt { color: var(--ink-700); font-size: .78rem; }
 .calculator-breakdown dd { margin: 5px 0 0; color: var(--emerald-900); font-weight: 700; }
-.admissions-sections { display: grid; gap: 36px; margin-top: 28px; }
-.admissions-block { padding: 26px; border-radius: 18px; background: var(--white); box-shadow: var(--shadow-soft); }
+.admissions-sections { display: grid; gap: 36px; margin-top: 28px; min-width: 0; }
+.admissions-block { min-width: 0; padding: 26px; border-radius: 18px; background: var(--white); box-shadow: var(--shadow-soft); }
 .admissions-block h3 { color: var(--emerald-900); font-size: 1.35rem; }
 .admissions-block h3 span { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin-right: 9px; border-radius: 50%; background: var(--gold-400); font-family: var(--font-body); font-size: .85rem; }
 .admissions-block .form-grid { margin-top: 18px; }
@@ -1547,4 +1551,59 @@ img { max-width: 100%; display: block; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-slide, .stage-card img, .stage-hub-card-image img { transition: none; }
+}
+
+/* ---------- Compact mobile header ---------- */
+@media (max-width: 520px) {
+  .header-inner {
+    min-width: 0;
+    gap: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .brand,
+  .brand-name-group,
+  .header-actions {
+    min-width: 0;
+  }
+  .brand {
+    flex-shrink: 1;
+    gap: 7px;
+  }
+  .brand-mark svg {
+    width: 36px;
+    height: 36px;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .brand-tagline {
+    font-size: 0.58rem;
+  }
+  .header-actions {
+    flex-shrink: 1;
+    gap: 6px;
+  }
+  .header-actions .btn-primary {
+    min-width: 0;
+    padding: 8px 10px;
+    font-size: 0;
+  }
+  .header-actions .btn-primary::after {
+    content: "Free trial";
+    font-size: 0.76rem;
+  }
+  .two-col-text .btn {
+    max-width: 100%;
+    white-space: normal;
+  }
+  .nav-toggle {
+    flex: 0 0 30px;
+    width: 30px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .fab-stack { right: 74px; }
 }
